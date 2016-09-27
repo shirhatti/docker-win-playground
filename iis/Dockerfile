@@ -1,5 +1,6 @@
 FROM microsoft/windowsservercore:10.0.14393.206
 
+# Install IIS and some optional features
 RUN dism /online /enable-feature /featurename:IIS-WebServerRole \
                                  /featurename:IIS-WebServer \
                                  /featurename:IIS-CommonHttpFeatures \
